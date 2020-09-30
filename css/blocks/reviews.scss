@@ -1,0 +1,16 @@
+.reviews {
+  background-color: black;
+  &__list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  }
+  &__item {
+    width: 25%;
+    height: 50%;
+    @include tablets {
+      width: 50%;
+      height: 25%;
+    }
+  }
+}

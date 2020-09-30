@@ -1,0 +1,57 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: #2f3133, $alpha: 0.99);
+  z-index: 100;
+  color: #fff;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 35px 30px 26px;
+    align-items: center;
+    width: 87%;
+  }
+  &__logo {
+    height: 72px;
+  }
+  
+  &__close {
+      width: rem(18px);
+      height: rem(18px);
+      position: relative;
+      &::after,&::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: rem(2px);
+        height: rem(18px);
+        background-color:#c1c2c2;
+      }
+        &::before {
+          left: rem(12px);
+          transform: rotate(-45deg);
+        }
+        &::after {
+          right: rem(4px);
+          transform: rotate(45deg);
+        }
+  }
+  .menu__list {
+    flex-direction: column;
+  }
+  .menu__item {
+    font-size: 24px;
+    position: relative;
+    margin: 0 0 63px;
+  }
+
+}
+
+
+
+

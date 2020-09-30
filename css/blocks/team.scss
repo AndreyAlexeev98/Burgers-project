@@ -1,0 +1,123 @@
+.team {
+  background: url('../../img/team-section/bg-team-origin-min.png') center center / cover no-repeat;
+  position: relative;
+  &__title {
+    margin-bottom: 2.7rem;
+  }
+}
+.team__section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: rgba(47,49,51,0.93);
+  padding: 5% 2% 0 8.3%;
+  @include tablets {
+    left: 0;
+    text-align: center;
+  }
+}
+.team__acco {
+  color: #fff;
+  font-size: rem(14px);
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+.team-acco__item {
+  margin-bottom: rem(32px);
+  &:last-child {
+    margin-bottom: rem(0px);
+  }
+  @include tablets {
+    margin-bottom: rem(19px);
+  }
+}
+.team-acco__trigger {
+    font-family: 'Gagalin';
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      display: block;
+      border-top: 0.4375rem solid #f9b43b;
+      border-left: 0.3125rem solid transparent;
+      border-right: 0.3125rem solid transparent;
+      border-bottom: 0rem solid transparent;
+      transform: rotate(0deg);
+      transition: 0.3s;
+      margin-right: rem(11px);
+    }
+    @include tablets {
+      font-size: rem(24px);
+      justify-content: center;
+    }
+  }
+  .team-acco__content {
+    font-family: 'Ubuntu';
+    margin: rem(12px) 0 rem(34px) rem(17px);
+    padding-right: 4%;
+    display: none;
+    @include tablets {
+      padding: 0 13%;
+      margin: 8px 0 2.125rem 0;
+    }
+  }
+
+.team-acco__item--active {
+  .team-acco__trigger {
+    color: #f9b43b;
+    &::before {
+      transform: rotate(-180deg);
+    }
+  }
+  .team-acco__content {
+    display: flex;
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 8px 0 0 0;
+    }
+  }
+}
+  .team-acco__pic {
+    height: rem(100px);
+    width: rem(100px);
+    margin-right: rem(20px);
+    flex-shrink: 0;
+    @include tablets {
+      margin: 0 rem(20px) rem(20px) 0;
+      height: rem(84px);
+      width: rem(84px);
+    }
+    .team-acco__img {
+      border-radius: 50%;
+      background-position: center;
+      object-fit: cover;
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+.team-acco__title {
+    font-weight: bold;
+    margin-bottom: rem(13px);
+    font-size: rem(14px);
+}
+  
+.team-acco__text-content {
+    font-weight: 300;
+    line-height: 1.8;
+    @include tablets {
+      line-height: 1.6;
+    }
+}
+
+

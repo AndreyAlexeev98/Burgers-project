@@ -1,0 +1,72 @@
+.hero {
+  background: url('../../img/hero-section/video-bg-min.jpg') center center / cover no-repeat;
+  color: #fff;
+  position: relative; // для позиционирования scroll-down
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  flex: .8;
+  margin-left: 2%;
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0 4%;
+  }
+  .hero__image {
+    width: rem(451px);
+    height: rem(424px);
+    @include phones {
+      width: rem(361px);
+      height: rem(339px);
+    }
+    .burger-img-burger {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.hero__text {
+  max-width: rem(452px);
+  padding: rem(72px) 0 0 1.3%;
+  font-size: 16px;
+  .section__title.title__hero {
+    font-size: 4.5em;
+  }
+  @media screen and (max-width: 943px) {
+    font-size: 12px;
+    padding-top: 0;
+  }
+  @include tablets {
+    text-align: center;
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+.hero__content .hero__image,.hero__text {
+  @include tablets {
+    width: auto;
+  }
+}
+
+.hero__desc {
+  font-size: 4.0625rem;
+  @include phones {
+    font-size: em(54px);
+  }
+  font-family: 'Lifehack';
+  line-height: 0.95;
+  letter-spacing: rem(-1.6px);
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+

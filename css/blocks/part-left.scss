@@ -1,0 +1,158 @@
+.part-left {
+  position: relative;
+}
+
+.composition-btn {
+  max-width: rem(92px);
+  max-height: rem(95px);
+  background-color: #f08c33;
+  padding: rem(12px) rem(23px);
+  border-radius: rem(5px);
+  &:hover {
+    background-color: #e35028;
+    & .composition {
+      right: rem(0px);
+      opacity: .9;
+      transition: opacity 2s;
+      @include phones {
+        top: rem(91px);
+        left: rem(-320px);
+        right: initial;
+      }
+    }
+  }
+  position: absolute;
+  transform: translateY(-78px);
+  @include tablets {
+    transform: translate(-44px,-94px);
+  }
+  @include phones {
+    transform: translate(-8px,-119px);
+  }
+}
+
+.composition-btn__img {
+  margin-bottom: rem(9px);
+  max-height: rem(41px);
+}
+
+.composition-btn__text {
+  color: #fff;
+}
+
+.composition {
+  position: absolute;
+  right: rem(-9999px);
+  opacity: 0;
+  background-color: #fff;
+  transform: translateX(100%);
+  top: 0;
+  padding: rem(20px);
+  border-radius: rem(5px);
+  user-select: text;
+  display: flex;
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(15px);
+    &:last-child {
+      margin-bottom: rem(0px);
+    }
+  }
+  &__img-wrap {
+    max-width: rem(44px);
+    max-height: rem(43px);
+    margin-right: rem(27px);
+  }
+  &__img {
+    max-width: rem(44px);
+  }
+  &__name {
+    margin: 0 rem(65px) 0 0;
+  }
+  &__mass {
+    width: max-content;
+    margin: 0 0 0 auto;
+  }
+  &__close {
+      @include tablets {
+        width: rem(18px);
+        height: rem(18px);
+        margin-left: rem(32px);
+        position: relative;
+        &::after,&::before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: rem(2px);
+          height: rem(18px);
+          background-color:#eb8162;
+          border-radius: 35% 35% 35% 35%;
+        }
+          &::before {
+            left: rem(12px);
+            transform: rotate(-45deg);
+          }
+          &::after {
+            right: rem(4px);
+            transform: rotate(45deg);
+          }
+      }
+    
+  }
+
+}
+
+
+.burg-black {
+  width: rem(505px);
+  height: rem(329px);
+  margin-left: rem(-30px);
+  @media screen and (max-width: 1050px) {
+    width: rem(377px);
+    padding-top: 4%;
+  }
+  @include phones {
+    width: 19.25rem;
+    height: auto;
+  }
+}
+
+.kkal {
+  position: absolute;
+  width: rem(60px);
+  height: rem(60px);
+  bottom: rem(-45px);
+  @include tablets {
+    right: -11px;
+    top: -95px;
+    bottom: initial;
+  }
+  @include phones {
+    top: -119px;
+  }
+}
+
+.kkal__img {
+  position: absolute;
+}
+
+.kkal__number {
+  font-size: rem(20px);
+  position: absolute;
+  transform: translate(rem(14px), rem(23px));
+}
+
+.kkal__value {
+  position: absolute;
+  transform: translate(rem(15px), rem(62px));
+}
+
+.composition-btn:hover ~ .kkal {
+    @include tablets {
+      display: none;
+    }
+    @include phones {
+      display: block;
+    }
+  }

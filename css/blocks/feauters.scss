@@ -1,0 +1,56 @@
+.feauters {
+  display: flex;
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.feauters__item {
+  margin-right: rem(18px);
+    &:last-child {
+      margin-right: rem(0px);
+    }
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    @include phones {
+      flex-direction: row;
+      margin: 0 0 rem(50px) 0;
+      &:last-child {
+        margin: 0;
+      } 
+      text-align: left; 
+      align-items: initial;
+    }
+}
+
+.feauters__img {
+  margin-bottom: 11%;
+  max-width: rem(97px);
+  max-height: rem(88px);
+  @include phones {
+    flex-direction: row;
+    margin: 0 rem(28px) 0 0; 
+
+  }
+}
+
+.feauters__title {
+  font-size: rem(24px);
+  font-family: 'Lifehack';
+  line-height: 1;
+  margin-bottom: 6%;
+}
+
+.feauters__text {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: rem(14px);
+  color: #2f3234;
+  line-height: 1.7;
+  &.feauters__text--burgers {
+    color: #fff;
+  }
+}

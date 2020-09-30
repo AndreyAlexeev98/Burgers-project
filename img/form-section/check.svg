@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 9" width="11" height="9">
+	<defs>
+		<image width="11" height="9" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJCAYAAADkZNYtAAAA6klEQVQoU2NkIAAe+2vMYvj/34z5P48VIz61j/3UUhkYGWdB1TzBqfipn4rhP0bmczDDGP8zHAErfuynfoCBkeGR7MabcSD+PT8dcVbG37cYGBj4oIovyW68qc/42F/9DAMDgzFIkJHxf5zMhluLn/ir3//PwKAAVfj9F9tvSeXV9z6CFO9hYGBwhkr8ZGBgvMDA8N8cZj3zPyZjqc3Xwc6BOMNf4yADw387dM8yMjH6yqy/sQXubhDjTJoxq/iLL08ZGBlEERr+18tuvNWEbAA8NB74qisyM/3fxcDAKM7AwLBSduPNVHSbAP/sRNLx0kXHAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="form">
+		<g id="inputs">
+			<use id="w128h1281338911632checkmark2" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+		</g>
+	</g>
+</svg>

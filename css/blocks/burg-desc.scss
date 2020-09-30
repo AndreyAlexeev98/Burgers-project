@@ -1,0 +1,66 @@
+.burg-desc {
+  max-width: 460px;
+  margin-top: rem(-33px);
+  margin-left: rem(7px);
+  @include tablets {
+    max-width: 100%;
+    margin-top: rem(-52px);
+    text-align: center;
+  }
+  @include phones {
+    margin: -0.5rem 0 0 0;
+  }
+}
+
+
+$orange: #e45028;
+$orangeHover: #c1401e;
+
+.btn {
+  background: $orange;
+    &:hover {
+      background: $orangeHover;
+    }
+  text-transform: uppercase;
+  border-radius: rem(5px);
+  font-size: rem(13px);
+  font-family: "Ubuntu";
+  font-weight: 500;
+  padding: rem(8px) rem(16px) rem(9px);
+  margin: rem(-9px) 0 0 rem(14px);
+  cursor: pointer;
+    &.btn--burger {
+      margin-left: rem(26px);
+      color: #fff;
+    }
+
+  // запрещаю возможность выделять текст  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.price {
+  display: flex;
+  color: #e35028;
+  margin-top: rem(20px);
+  font-family: 'Gagalin';
+  line-height: 1;
+  align-items: baseline;
+  @include tablets {
+    display: inline-flex;
+  }
+  .price__number {
+    font-size: rem(72px);
+    @include phones {
+      font-size: rem(50px);
+    }
+  }
+  .price__currency {
+    font-size: rem(30px);
+    @include phones {
+      font-size: rem(24px);
+    }
+  }
+}

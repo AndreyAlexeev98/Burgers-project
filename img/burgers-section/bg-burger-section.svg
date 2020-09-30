@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1103 649" width="1103" height="649">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="551.5" y1="650" x2="551.5" y2="0">
+			<stop offset="0" stop-color="#f9b33b"  />
+			<stop offset="0.478" stop-color="#ea8c38"  />
+			<stop offset="0.738" stop-color="#f9b33b"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+	</style>
+	<g id="burgers">
+		<path id="Rectangle 1" class="shp0" d="M0 0L1103 0L1103 650L0 650L0 0Z" />
+	</g>
+</svg>

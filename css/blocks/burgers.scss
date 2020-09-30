@@ -1,0 +1,23 @@
+.burgers {
+  background: url(../../img/burgers-section/bg-burger-section.svg) center center / cover no-repeat;
+  color: #fff;
+  font-size: rem(14px);
+  font-family: 'Gagalin';
+  flex-direction: row;
+  align-items: center;
+}
+
+.burgers-container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  @include tablets {
+    flex-direction: column;
+    margin-top: rem(112px);
+  }
+  @include phones {
+    margin-top: 9.5rem;
+  }
+}
+

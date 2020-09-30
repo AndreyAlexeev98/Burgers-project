@@ -1,0 +1,101 @@
+.review {
+  position: relative;
+  color: #fff;
+  font-family: 'Ubuntu';
+  font-size: rem(14px);
+  filter: grayscale(100%);
+  &__img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: rem(47px) rem(20px);
+    opacity: 0;
+    transition: .3s;
+    transform: scale(.8);
+    @include tablets {
+      text-align: center;
+      padding: rem(32px) rem(42px);
+    }
+    @include phones {
+      padding: 36px 52px;
+    }
+    .review__ {
+      &username {
+        margin-bottom: rem(21px);
+        font-family: 'Gagalin';
+        text-transform: uppercase;
+        font-size: rem(14px);
+        @include phones {
+          font-size: rem(24px);
+          &::after {
+            content: "Читать отзыв";
+            display: block;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: rem(13px);
+            padding: rem(13px) rem(16px);
+            border-radius: rem(5px);
+            background-color: #2f3234;  
+            margin-top: 16px;         
+            font-family: 'Ubuntu';
+          }
+        }
+      }
+      &content {
+        margin-bottom: rem(21px);
+        font-weight: 300;
+        line-height: 1.73;
+        @include phones {
+          display: none;
+        }
+      }
+      &btn {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: rem(13px);
+        padding: rem(11px) rem(16px);
+        border-radius: rem(5px);
+        background-color: #2f3234;
+        &:hover {
+          background-color: #1f2122;
+        }
+        @include phones {
+          display: none;
+        }
+      }
+    }
+  }
+  &:hover {
+    .review__hover {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #bbb .5;
+      &::before {
+        content: '';
+        background-color: #141414;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    }
+  }
+}

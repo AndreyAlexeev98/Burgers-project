@@ -1,0 +1,38 @@
+.main-down {
+  width: rem(29px);
+  height: rem(14px);
+  position: absolute;
+  bottom: rem(40px);
+  left: 50%;
+  transform: translateX(-50%); }
+
+.arrow__down {
+  width: 100%;
+  height: 100%; }
+
+.arrow-cast {
+  width: 15px;
+  height: 14px;
+  position: relative; }
+  .arrow-cast::after, .arrow-cast::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 35% 35% 0 0; }
+  .arrow-cast::before {
+    left: 0;
+    transform: rotate(-45deg); }
+  .arrow-cast::after {
+    right: 0;
+    transform: rotate(45deg); }
+
+.arrow-cast--left {
+  transform: rotate(90deg); }
+
+.arrow-cast--right {
+  transform: rotate(-90deg); }
+
+/*# sourceMappingURL=main-down.css.map */

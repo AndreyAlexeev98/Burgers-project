@@ -1,0 +1,11 @@
+.we {
+  background: url("../../img/we-section/bg-we-min.png") center center / cover no-repeat;
+}
+
+.we__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: rem(-50px);
+}

@@ -1,0 +1,12 @@
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+  // min-width: 940px + 20px;       // - в адаптиве не нужно
+}
+
+.container {
+  max-width: 58.875rem;    // width: 942px;    - in static layout 
+  width: 95%;
+  margin: 0 auto;
+}

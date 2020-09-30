@@ -1,0 +1,30 @@
+.header, .header__btn {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  margin-top: rem(8px);
+  @media screen and (max-width:942px) {
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  width: rem(97px);
+  height: rem(77px);
+  @include tablets {
+    margin-right: auto;
+  }
+}
+
+.header__btn {
+  margin-left: auto;
+  margin-top: rem(-9px);
+  @media screen and (max-width: 942px) {
+    margin-left: 0;
+  }
+  @include tablets {
+    display: none;
+  }
+}
