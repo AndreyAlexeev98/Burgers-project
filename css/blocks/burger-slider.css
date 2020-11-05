@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 15 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burgers.scss, in `tablets'
-        from line 15 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burgers.scss
+        on line 59 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burger-slider.scss, in `tablets'
+        from line 59 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burger-slider.scss
 
-10: .burgers-container {
-11:   margin: 0;
-12:   display: flex;
-13:   align-items: center;
-14:   position: relative;
-15:   @include tablets {
-16:     flex-direction: column;
-17:     margin-top: rem(112px);
-18:   }
-19:   @include phones {
-20:     margin-top: 9.5rem;
+54: @media screen and (max-width: 1030px) {
+55:   width: 100%;
+56:   left: -1%;
+57:   right: 5%;
+58: }
+59: @include tablets {
+60:   width: 90%;
+61:   left: 5%;
+62:   right: 5%;
+63: }
+64: }
 
 Backtrace:
-C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burgers.scss:15:in `tablets'
-C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burgers.scss:15
+C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burger-slider.scss:59:in `tablets'
+C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burger-slider.scss:59
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 15 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burgers.scss, in `tablets'\A         from line 15 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burgers.scss\A \A 10: .burgers-container {\A 11:   margin: 0;\A 12:   display: flex;\A 13:   align-items: center;\A 14:   position: relative;\A 15:   @include tablets {\A 16:     flex-direction: column;\A 17:     margin-top: rem(112px);\A 18:   }\A 19:   @include phones {\A 20:     margin-top: 9.5rem;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 59 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burger-slider.scss, in `tablets'\A         from line 59 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\burger-slider.scss\A \A 54: @media screen and (max-width: 1030px) {\A 55:   width: 100%;\A 56:   left: -1%;\A 57:   right: 5%;\A 58: }\A 59: @include tablets {\A 60:   width: 90%;\A 61:   left: 5%;\A 62:   right: 5%;\A 63: }\A 64: }"; }

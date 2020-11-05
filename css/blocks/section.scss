@@ -26,21 +26,6 @@ $title-color: #f9b43b;
       font-size: rem(50px);
     }
   }
-  &.section__title--burgers {
-    color: #fff;
-    line-height: 0.9;
-    margin-bottom: rem(48px);
-    @media screen and (max-width: 1050px) {
-      font-size: rem(56px);
-    }
-    @include tablets {
-      padding: 0 20%;
-    }
-    @include phones {
-      font-size: rem(34px);
-      margin-bottom: rem(16px);
-    }
-  }
 }
 
 .section__title--centered {

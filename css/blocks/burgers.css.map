@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,QAAS;EACP,UAAU,EAAE,kFAAoF;EAChG,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,SAAS;EACpB,WAAW,EAAE,SAAS;EACtB,OAAO,EAAE,IAAI;;AAGf,kBAAmB;EACjB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,QAAQ,EAAE,QAAQ",
-"sources": ["burgers.scss"],
-"names": [],
-"file": "burgers.css"
-}

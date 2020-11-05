@@ -1,0 +1,52 @@
+.reviews__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #2f3234, $alpha: 0.92);
+  visibility: hidden;
+
+  &--active {
+    visibility: visible;
+  }
+
+  .popup__{
+    &wrap {
+      background-color: #fff;
+      border-radius: 5px;
+      position: relative;
+      max-width: 460px;
+      min-width: 200px;
+      padding: 30px 20px;
+    }
+    &close {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      &__img:hover{
+        opacity: 0.7;
+      }
+    }
+    &title,&text {
+      color: #000;
+    }
+    &title {
+      font-family: "Gagalin";
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    &text {
+      font-family: "Ubuntu";
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  }
+}

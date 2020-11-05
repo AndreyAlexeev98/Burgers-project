@@ -1,0 +1,430 @@
+.burgers {
+  background: url(../../img/burgers-section/bg-burger-section.svg) center center / cover no-repeat;
+  color: #fff;
+  font-size: rem(14px);
+  font-family: 'Gagalin';
+  flex-direction: row;
+  align-items: center;
+
+
+// display: -webkit-box;
+// display: -ms-flexbox;
+// display: flex;
+// -webkit-box-align: center;
+// -ms-flex-align: center;
+// align-items: center; 
+
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 940px;
+  max-height: 100%;
+  @media screen and (max-width: 768px) {
+    .burgers .container {
+    max-width: 720px;
+    padding: 0 20px;
+
+    }
+  }
+}
+}
+
+.slider {
+width: 100%;
+  position: relative; 
+}
+
+.slider__wrapp {
+overflow: hidden;
+}
+
+.slider__pages {
+position: absolute;
+width: 105%;
+top: 50%;
+left: -2.5%;
+cursor: pointer;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+@media screen and (max-width: 1030px) {
+  width: 100%;
+  left: -1%;
+  right: 5%;
+}
+@include tablets {
+  width: 90%;
+  left: 5%;
+  right: 5%;
+}
+}
+
+.slider__page-prev,.slider__page-next {
+width: 15px;
+height: 27px;
+position: relative;
+}
+
+.slider__page-prev {
+background: url(../img/burgers/prev.png) no-repeat;
+left: -15px;
+}
+
+.slider__page-next {
+background: url(../img/burgers/next.png) no-repeat;
+right: -15px;
+}
+
+.slider__list {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-transition: 1s;
+-o-transition: 1s;
+transition: 1s;
+}
+
+.slider__item {
+position: relative;
+-webkit-box-flex: 1;
+-ms-flex: 1;
+flex: 1;
+}
+
+.slide {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+padding: 3% 0;
+-webkit-box-align: center;
+-ms-flex-align: center;
+@include tablets {
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+.slide__photo {
+-ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 80px 0 40px;
+  width: 48%;
+  @media screen and (max-width: 950px) {
+  padding-top: 96px;      
+  }
+  @include tablets {
+    padding-top: 29%;
+    width: 62%;
+  }
+  @include phones {
+    width: 90%;
+  }
+}
+
+.slide__img {
+max-width: 100%;
+max-height: 100%;
+}
+
+.slide__content {
+margin-left: 3%;
+font-family: Ubuntu;
+color: #ffffff;
+font-size: 13.98px;
+font-weight: 300;
+line-height: 24px;
+width: 49%;
+@include tablets {
+  margin-left: 0;
+  width: 80%;
+  text-align: center;
+  margin-right: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@include phones {
+  margin-right: 0;
+  width: 90%
+}
+}
+
+.title--mb {
+margin-top: 46px;
+font-family: 'Gagalin';
+font-weight: 500;
+font-size: 72px;
+color: #fff;
+line-height: 0.9;
+margin-bottom: rem(48px);
+@include tablets {
+  margin-top: 5%;
+  font-size: 72px;
+  text-align: center;
+  padding: 0 1%;
+}
+@include phones {
+  font-size: 50px;
+}
+}
+
+.slide__desc {
+margin-bottom: 8.5%;
+}
+
+.slide__order {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: end;
+-ms-flex-align: end;
+align-items: flex-end;
+}
+
+.slide__price {
+font-family: Gagalin;
+color: #e35028;
+font-weight: 400;
+line-height: 28px;
+}
+
+.slide__count {
+font-size: 71.6px;
+}
+
+.slide__wallet {
+font-size: 29.84px;
+}
+
+.slide__buttons {
+margin-left: 25px;
+}
+
+.button_bg-red {
+background: #e45028;
+padding: 0.625rem 0.9375rem;
+  text-decoration: none;
+  border-radius: 0.3125rem;
+  font-size: 0.8125rem;
+  font-family: Ubuntu;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.composition {
+background-color: #f08c33;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex; 
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+border-radius: 5px;
+width: 90px;
+height: 90px;
+position: absolute;
+top: 6%;
+top: 29px;
+left: 0;
+cursor: pointer;
+&:hover {
+  background-color: #e35028;
+  .composition__down.no-visible{
+    visibility: inherit;
+    opacity: 1;
+    transition: all 1s;
+  }
+  .no-visible{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@include tablets {
+  top: 2.5%;
+  left: 14.5%;
+}
+@include phones {
+  left: 0;
+}
+}
+
+.composition__icon {
+  position: relative;
+}
+
+.composition__pic {
+height: 42px;
+width: 44px;
+margin-bottom: 8px;
+margin-top: 7px;
+}
+
+.composition__text {
+font-family: Gagalin;
+color: #ffffff;
+font-size: 13.92px;
+font-weight: 400;
+}
+
+.composition__down {
+position: absolute;
+top: 0;
+left: 100%;
+background: #fef8ec;
+border-radius: 5px;
+visibility: hidden;
+z-index: 1;
+opacity: 0;
+transition: all 1s;
+@media screen and (max-width: 491px) {
+  top: 100%;
+  left: 0;
+}
+
+.composition__list {
+  padding: 19px 23px;
+  @include tablets {
+    padding: 19px 59px 19px 23px;
+    position: relative;
+  }
+  @include phones {
+    padding: 19px 38px 19px 23px;
+  }
+}
+
+.composition__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 12px;
+  -ms-flex-pack: distribute;
+  // justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.composition__icon {
+  height: 39px;
+  width: 44px;
+  margin-right: 29px;
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+}
+
+.composition__avatar {
+  max-height: 100%;
+    max-width: 100%;
+}
+
+.composition__name,.composition__grams {
+  font-family: 'Ubuntu';
+    font-weight: 500;
+    color: #000;
+}
+.composition__name {
+  margin-right: 57px;
+}
+.composition__grams {
+  width: max-content;
+  margin: 0 0 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .composition__close {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-left: 2rem;
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    @include phones {
+      top: 4%;
+      right: 4%;
+    }
+     }
+    .composition__close::after, .composition__close::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0.125rem;
+      height: 1.125rem;
+      background-color: #eb8162;
+      border-radius: 35% 35% 35% 35%; }
+    .composition__close::before {
+      left: 0.75rem;
+      transform: rotate(-45deg); }
+    .composition__close::after {
+      right: 0.25rem;
+      transform: rotate(45deg); } }
+}
+
+
+.calories {
+height: 80px;
+width: 60px;
+font-family: Gagalin;
+color: #ffffff;
+font-size: 19.9px;
+font-weight: 400;
+position: absolute;
+left: 0;
+bottom: 0;
+@include tablets {
+  left: initial;
+  bottom: initial;
+  top: 2.5%;
+  right: 21%;
+}
+@include phones {
+  right: 0;
+}
+
+.calories__img {
+  position: relative;
+}
+
+.calories__pic {
+  max-height: 100%;
+  max-height: 100%;
+}
+
+.calories__count{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.calories__text {
+  font-size: 13.92px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+}
+

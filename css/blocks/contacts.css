@@ -1,5 +1,8 @@
 .contacts {
-  background: url(../../img/contacts-section/bg-contacts-map-min.png) center center/cover no-repeat;
   position: relative; }
+
+#map {
+  width: 100vw;
+  height: 100vh; }
 
 /*# sourceMappingURL=contacts.css.map */

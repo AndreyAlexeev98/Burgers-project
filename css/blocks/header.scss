@@ -8,7 +8,7 @@
   @media screen and (max-width:942px) {
     justify-content: space-between;
   }
-}
+} 
 
 .header__logo {
   width: rem(97px);
@@ -21,6 +21,7 @@
 .header__btn {
   margin-left: auto;
   margin-top: rem(-9px);
+  margin-right: 2%;
   @media screen and (max-width: 942px) {
     margin-left: 0;
   }

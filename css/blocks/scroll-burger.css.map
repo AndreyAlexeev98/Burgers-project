@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,2BAA4B;EAC1B,SAAS,EAAE,SAAS;EACpB,UAAU,EAAE,SAAS;EACrB,cAAc,EAAE,SAAS;;AAG3B,YAAa;EACX,aAAa,EAAE,SAAS;EACxB,WAAW,EAAE,SAAS;;AAGxB,aAAc;EACZ,YAAY,EAAE,IAAI;EAClB,YAAY,EAAE,SAAS",
-"sources": ["scroll-burger.scss"],
-"names": [],
-"file": "scroll-burger.css"
-}

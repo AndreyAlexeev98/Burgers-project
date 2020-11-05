@@ -1,20 +1,24 @@
 .modal {
-  display: none;
   position: fixed;
+  opacity: 0;
   top: 0;
-  left: 0;
+  left: 100%;
   width: 100%;
   height: 100vh;
   background-color: rgba($color: #2f3133, $alpha: 0.99);
-  z-index: 100;
   color: #fff;
+  transition:all .4s;
+  &--active {
+    left: 0;
+    opacity: 1;
+  }
 
   &__header {
     display: flex;
     justify-content: space-between;
-    margin: 12px 35px 30px 26px;
+    margin: 9px 35px 30px 3%;
     align-items: center;
-    width: 87%;
+    width: 94%;
   }
   &__logo {
     height: 72px;
@@ -47,9 +51,19 @@
   .menu__item {
     font-size: 24px;
     position: relative;
-    margin: 0 0 63px;
-  }
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .menu__link {
+      margin: 13px;
+    }
 
+  }
+}
+
+.body--active-menu{
+  overflow:hidden;
 }
 
 

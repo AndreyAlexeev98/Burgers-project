@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 7 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss, in `phones'
-        from line 7 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss
+        on line 8 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss, in `phones'
+        from line 8 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss
 
-2:   position: absolute;
 3:   bottom: 0;
 4:   width: 100%;
 5:   height: rem(59px);
-6:   background: url(../../img/contacts-section/bg-footer.png) center center / cover no-repeat; 
-7:   @include phones {
-8:     height: 14%;
-9:   }
-10:   .container {
-11:     display: flex;
-12:     justify-content: space-between;
+6:   z-index: 1;
+7:   background: url(../../img/contacts-section/bg-footer.png) center center / cover no-repeat; 
+8:   @include phones {
+9:     height: 14%;
+10:   }
+11:   .container {
+12:     display: flex;
+13:     justify-content: space-between;
 
 Backtrace:
-C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss:7:in `phones'
-C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss:7
+C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss:8:in `phones'
+C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss:8
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 7 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss, in `phones'\A         from line 7 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss\A \A 2:   position: absolute;\A 3:   bottom: 0;\A 4:   width: 100%;\A 5:   height: rem(59px);\A 6:   background: url(../../img/contacts-section/bg-footer.png) center center / cover no-repeat; \A 7:   @include phones {\A 8:     height: 14%;\A 9:   }\A 10:   .container {\A 11:     display: flex;\A 12:     justify-content: space-between;"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 8 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss, in `phones'\A         from line 8 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\footer.scss\A \A 3:   bottom: 0;\A 4:   width: 100%;\A 5:   height: rem(59px);\A 6:   z-index: 1;\A 7:   background: url(../../img/contacts-section/bg-footer.png) center center / cover no-repeat; \A 8:   @include phones {\A 9:     height: 14%;\A 10:   }\A 11:   .container {\A 12:     display: flex;\A 13:     justify-content: space-between;"; }

@@ -2,7 +2,7 @@
 @import "./normalize.scss";
 @import "./base.scss";
 @import "./layout.scss";
-@import "./media.scss";
+@import "./_media.scss";
 
 @import "../blocks/section.scss";
 
@@ -10,19 +10,14 @@
 @import "../blocks/header.scss";
 @import "../blocks/logo.scss";
 @import "../blocks/menu.scss";
-@import "../blocks/hamburger-menu-link.scss";
+@import "../blocks/hamburger-menu.scss";
 @import "../blocks/modal.scss";
 @import "../blocks/main-down.scss";
-
+ 
 @import "../blocks/we.scss";
 @import "../blocks/feauters.scss";
 
-@import "../blocks/burgers.scss";
-@import "../blocks/scroll-burger.scss";
-@import "../blocks/part-left.scss";
-@import "../blocks/composition-btn.scss";
-
-@import "../blocks/burg-desc.scss";
+@import '../blocks/burger-slider.scss';
 
 @import "../blocks/team.scss";
 @import "../blocks/menus.scss";
@@ -30,10 +25,13 @@
 
 @import "../blocks/reviews.scss";
 @import "../blocks/review.scss";
+@import "../blocks/reviews__popup.scss";
 
 
 @import "../blocks/form-section.scss";
 @import "../blocks/form.scss";
+
+@import '../blocks/how-work.scss';
 
 @import "../blocks/contacts.scss";
 @import "../blocks/footer.scss";

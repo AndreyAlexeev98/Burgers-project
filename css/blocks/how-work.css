@@ -1,0 +1,80 @@
+.how-work {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center; }
+
+.title-how-work {
+  color: #2f3234;
+  font-size: 61px;
+  font-family: 'Gagalin';
+  font-weight: 500;
+  margin-bottom: 43px; }
+
+.player {
+  position: relative;
+  height: 405px;
+  display: inline-flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox; }
+
+.hidden {
+  display: none; }
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: url(/img/how-work-section/bg_player.png) no-repeat;
+  height: 100%;
+  cursor: pointer; }
+
+.player__play-white {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 82px;
+  height: 118px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background: url(/img/how-work-section/play-white.png) no-repeat; }
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  background: rgba(62, 62, 62, 0.8);
+  overflow: hidden; }
+  .player__controls .player__play {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    color: transparent;
+    background: url(/img/how-work-section/play.png) center center no-repeat;
+    padding: 10px; }
+  .player__controls .player__playback {
+    width: 400px;
+    height: 5px;
+    position: absolute;
+    top: 16px;
+    left: 60px;
+    background: #626262; }
+    .player__controls .player__playback .player__playback-mark {
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: #626262;
+      position: absolute;
+      top: -3px;
+      left: 0;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+
+/*# sourceMappingURL=how-work.css.map */

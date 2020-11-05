@@ -3,6 +3,7 @@
   bottom: 0;
   width: 100%;
   height: rem(59px);
+  z-index: 1;
   background: url(../../img/contacts-section/bg-footer.png) center center / cover no-repeat; 
   @include phones {
     height: 14%;

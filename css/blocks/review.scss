@@ -23,13 +23,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: rem(47px) rem(20px);
+    padding: 10% rem(20px);
     opacity: 0;
     transition: .3s;
     transform: scale(.8);
     @include tablets {
       text-align: center;
-      padding: rem(32px) rem(42px);
+      padding: 2%;
     }
     @include phones {
       padding: 36px 52px;
@@ -40,6 +40,9 @@
         font-family: 'Gagalin';
         text-transform: uppercase;
         font-size: rem(14px);
+        @include tablets {
+          margin-bottom: 1%;
+        }
         @include phones {
           font-size: rem(24px);
           &::after {
@@ -57,11 +60,14 @@
         }
       }
       &content {
-        margin-bottom: rem(21px);
+        margin-bottom: 3%;
         font-weight: 300;
         line-height: 1.73;
         @include phones {
           display: none;
+        }
+        @media screen and (max-width: 640px) {
+          font-size: 12px;
         }
       }
       &btn {
@@ -71,6 +77,7 @@
         padding: rem(11px) rem(16px);
         border-radius: rem(5px);
         background-color: #2f3234;
+        color: #fff;
         &:hover {
           background-color: #1f2122;
         }

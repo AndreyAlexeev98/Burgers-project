@@ -4,13 +4,13 @@ Error: Undefined mixin 'tablets'.
         from line 30 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\review.scss
 
 25:     bottom: 0;
-26:     padding: rem(47px) rem(20px);
+26:     padding: 10% rem(20px);
 27:     opacity: 0;
 28:     transition: .3s;
 29:     transform: scale(.8);
 30:     @include tablets {
 31:       text-align: center;
-32:       padding: rem(32px) rem(42px);
+32:       padding: 2%;
 33:     }
 34:     @include phones {
 35:       padding: 36px 52px;
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 30 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\review.scss, in `tablets'\A         from line 30 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\review.scss\A \A 25:     bottom: 0;\A 26:     padding: rem(47px) rem(20px);\A 27:     opacity: 0;\A 28:     transition: .3s;\A 29:     transform: scale(.8);\A 30:     @include tablets {\A 31:       text-align: center;\A 32:       padding: rem(32px) rem(42px);\A 33:     }\A 34:     @include phones {\A 35:       padding: 36px 52px;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 30 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\review.scss, in `tablets'\A         from line 30 of C:\Users\DELL\Desktop\PROJECT BURGERS\css\blocks\review.scss\A \A 25:     bottom: 0;\A 26:     padding: 10% rem(20px);\A 27:     opacity: 0;\A 28:     transition: .3s;\A 29:     transform: scale(.8);\A 30:     @include tablets {\A 31:       text-align: center;\A 32:       padding: 2%;\A 33:     }\A 34:     @include phones {\A 35:       padding: 36px 52px;"; }
